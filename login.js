@@ -13,7 +13,7 @@ function entrar() {
         return;
     } 
    
-    window.location.assign('https://youtube.com')
+    window.location.assign('home/home.html')
 
     return false
 }

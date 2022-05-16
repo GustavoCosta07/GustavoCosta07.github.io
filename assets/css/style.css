@@ -171,3 +171,29 @@ a:hover {
 .form-footer div a {
   color: #ffb37b;
 }
+
+.logo {
+  margin: 0 auto;
+  height: 180px;
+  width: 180px;
+  background-color: #b4f396;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.logo > img {
+  width: inherit;
+  width: inherit;
+  display: block;
+}
+
+.foot {
+  position: flex;
+   bottom:0;
+   width:100%;
+   height:12px;  
+   background-color:#175d3c;
+   color: white;
+   text-align: center;
+   padding: 0%;
+}
