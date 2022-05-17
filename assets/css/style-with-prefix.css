@@ -9,7 +9,7 @@
 
 body {
   color: #222222;
-  background-color: #ffffff;
+  background-color: #bef1b2;;
 }
 
 body,
@@ -27,9 +27,9 @@ button {
 
 .logo {
   margin: 0 auto;
-  height: 180px;
-  width: 180px;
-  background-color: #b4f396;
+  height: 300px;
+  width: 300px;
+  background-color: #ffb37b;
   border-radius: 50%;
   margin-bottom: 20px;
 }
@@ -271,10 +271,7 @@ a:hover {
 }
 footer{
   width: 100%;
-  /* position: fixed; */
-  /* bottom: 0;
-  left: 0; */
-  background: #3a5a40;
+  background: #39903A;
   height: 100%;
   padding: 20px;
   text-align: center;
