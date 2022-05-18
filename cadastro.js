@@ -34,7 +34,7 @@ function cadastrar() {
         )
 
         localStorage.setItem('listaUser', JSON.stringify(listaUser))
-        window.location.assign('login.html')
+        window.location.assign('index.html')
         return false
 
     }

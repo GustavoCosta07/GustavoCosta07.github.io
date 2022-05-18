@@ -1,7 +1,7 @@
 const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
 
 if (!usuarioLogado) {
-    window.location.assign('../login.html')
+    window.location.assign('../index.html')
 }
 
 window.onload = () => {
@@ -10,5 +10,5 @@ window.onload = () => {
 
 function sair () {
     localStorage.removeItem('usuarioLogado');
-    window.location.assign('../login.html')
+    window.location.assign('../index.html')
 }
