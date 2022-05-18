@@ -64,21 +64,21 @@ function editar() {
 
 function excluir() {
     
-    let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
+    const listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
 
     const tamanhoLista = listaUser.length
 
     for (let contador = 0; contador < tamanhoLista; contador++) {
         if (listaUser[contador].id === usuarioLogado.id) {
-            delete listaUser[contador];
+            listaUser.splice(contador, 1)
             break;
         }
     }
 
     if ( listaUser.length === 0) {
-        localStorage.remove('listaUser')
+        localStorage.removeItem('listaUser')
     } else {
-        localStorage.setItem('listaUser', JSON.stringify(listaUser))
+        localStorage.setItem('listaUser', JSON.stringify(listaUser));
     }
 
     localStorage.removeItem('usuarioLogado');

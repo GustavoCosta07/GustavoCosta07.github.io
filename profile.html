@@ -23,7 +23,7 @@
 
                 <h2 class="title">Meu Perfil</h2>
 
-                <form action="#" class="the-form" onsubmit="return editar()">
+                <form action="#" class="the-form" onsubmit="editar()">
 
                     <label for="usuario">Usuário</label>
                     <input type="text" name="usuario" id="usuario" placeholder="Ex: João">
@@ -44,7 +44,7 @@
                     <input type="password" name="confirmacao" id="confirmacao" placeholder="Confirme a sua senha">
 
                     <input type="submit" value="Salvar">
-                    <a style="background: #ef233c; color: #fff" href="/login.html">Excluir Conta</a>
+                    <input type="button" value="Excluir Conta" onclick="excluir()"> 
                 </form>
 
             </div>
