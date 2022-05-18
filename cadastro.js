@@ -29,6 +29,7 @@ function cadastrar() {
                 nomeCad: nome,
                 emailCad: email,
                 senhaCad: senha,
+                usuarioCad: usuario,
             }
         )
 

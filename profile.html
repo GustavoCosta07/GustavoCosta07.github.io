@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bichos S.A</title>
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style-with-prefix.css">
+    <script src="profile.js"></script>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="form-container">
+
+            <div class="form-body">
+
+                <div class="avatar">
+                    <img src="assets/avatar.png"/>
+                </div>
+
+                <h2 class="title">Meu Perfil</h2>
+
+                <form action="#" class="the-form" onsubmit="return editar()">
+
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="usuario" id="usuario" placeholder="Ex: João">
+
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Entre com o seu e-mail">
+
+                    <label for="senha_atual">Senha Atual</label>
+                    <input type="password" name="senha_atual" id="senha_atual" placeholder="Entre com a sua senha atual">
+
+                    <label for="senha"> Nova Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="Entre com a sua nova senha">
+
+                    <label for="confirmacao">Confirmação de senha</label>
+                    <input type="password" name="confirmacao" id="confirmacao" placeholder="Confirme a sua senha">
+
+                    <input type="submit" value="Salvar">
+                    <a style="background: #ef233c; color: #fff" href="/login.html">Excluir Conta</a>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="bottom">
+            <p>© Todos os direitos reservados - Bichos SA - 2022 PUC MINAS</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

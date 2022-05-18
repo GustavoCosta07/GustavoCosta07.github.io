@@ -24,6 +24,19 @@ button {
   max-width: 900px;
   margin: 0 auto;
 }
+.avatar {
+  margin: 0 auto;
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.avatar > img {
+  width: inherit;
+  height: inherit;
+  display: block;
+}
 
 .logo {
   margin: 0 auto;
@@ -36,7 +49,7 @@ button {
 
 .logo > img {
   width: inherit;
-  width: inherit;
+  height: inherit;
   display: block;
 }
 

@@ -12,6 +12,8 @@ function entrar() {
         alert("Insira os dados nos campos corretamente!")
         return;
     } 
+
+    localStorage.setItem('usuarioLogado', JSON.stringify(usuarioLogado[0]));
    
     window.location.assign('home/home.html')
 
