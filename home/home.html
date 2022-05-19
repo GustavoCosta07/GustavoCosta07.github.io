@@ -9,60 +9,10 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Bichos S.A</title>
     <script src="home.js"></script>
+
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cadd83334d.js" crossorigin="anonymous"></script>
 </head>
-
-<style>
-    .avatar {
-        margin: -20px auto;
-        height: 70px;
-        width: 70px;
-        border-radius: 50%;
-        margin-bottom: 5px;
-        background-color: #fff;
-        text-align: center;
-    }
-
-    .avatar>a>img {
-        margin-top: 10px;
-        width: 45px;
-        height: 45px;
-    }
-
-    .access_profile {
-        text-align: center;
-    }
-
-    .access_profile > span {
-        color: #fff;
-        text-align: center;
-        font-weight: 500;
-        text-transform: capitalize;
-    }
-
-    .menu {
-        margin: 0 auto;
-        text-align: center;
-        list-style: none;
-        text-align: center;
-        padding: 0;
-        font-weight: bold;
-    }
-    
-    .menu > li {
-        color: #fff;
-        margin: 10px auto 10px auto;
-        padding: 2px;
-        position: relative;
-        cursor: pointer;
-    }
-
-    .menu > li:hover {
-        color: #4b876b;
-        transition: 0.5ms;
-        font-weight: bold;
-    }
-</style>
 
 <body>
 
@@ -73,37 +23,25 @@
     <header class="heade">
         <div class="row cabe">
 
-            <div class="col-12 headerA"></div>
-
             <div class="row">
-                <div class="col-2">
-                    <div class="logo-imagem"><img src="imagem/log.png" class="logo">
+
+                <div class="col-8 col-sm-8 col-md-2 col-lg-2">
+                    <div class="logo-imagem"><img src="imagem/log2.png" height="200" width="200" class="logo">
                     </div>
                 </div>
 
-                <div class="col-8  menuA">
+                <div class="col-12 col-sm-12 col-md-10 col-lg-10 menuA">
                     <nav class="nav nav-pills flex-column flex-sm-row">
-                        <a id="headpad" class="flex-sm-fill text-sm-center nav-link active" href="#">Home</a>
-                        <a id="headpad" class="flex-sm-fill text-sm-center nav-link active" href="#">Adoção</a>
-                        <a id="headpad" class="flex-sm-fill text-sm-center nav-link active" href="#">Doação</a>
-                        <a id="headpad" class="flex-sm-fill text-sm-center nav-link active" href="#">Dicas de
-                            Cuidados</a>
-
+                        <a id="headpad" class="flex-sm-fill text-sm-center nav-link active" href="Homepage">Home</a>
+                        <a id="headpad" class="flex-sm-fill text-sm-center nav-link active" href="Adcao">Adoção</a>
+                        <a id="headpad" class="flex-sm-fill text-sm-center nav-link active" href="Doacao">Doação</a>
+                        <a id="headpad" class="flex-sm-fill text-sm-center nav-link active" href="sobre.html">Sobre</a>
+                        <a id="headpad" class="flex-sm-fill text-sm-center nav-link active" href="../profile.html">Editar</a>
+                        <a id="headpad" class="flex-sm-fill text-sm-center nav-link active" onclick="sair()">Sair</a>
                     </nav>
-
-                </div>
-                <div class="col-2 menuA">
-                    <div class="access_profile">
-                        <div class="avatar">
-                            <a href="../profile.html"><img src="../assets/avatar.png" /></a>
-                        </div>
-                        <span id="usuarioNome"></span>
-                        <ul class="menu" onclick="sair()">
-                            <li>Sair</li>
-                        </ul>
-                    </div>
                 </div>
             </div>
+
         </div>
     </header>
 
@@ -111,22 +49,21 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-8">
+                <div class="col-9">
 
                     <h2 class="adocao"><b> Adoções Relevantes</b></h2>
 
                     <div class="container">
                         <div class="row">
-                            <div class="col-xs-12 col-11 col-md-4">
-                                <img height="100%" width="100%" src="imagem/images.jpg" class="imagem1">
-                            </div>
+
+                            <img height="100%" width="100%" src="imagem/images.jpg" class="imagem1">
+
                             <div class="col-xs-12 col-12 col-md-6">
                                 <h5> Cruela - <b>Breno H.</b></h5>
                                 <p></p>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam culpa nihil ipsum
-                                    natus error illum ad exercitationem provident vel, tempora amet modi temporibus
-                                    veritatis blanditiis impedit aspernatur, eos nulla dicta?</p><a href="#"><button
-                                        type="button" class="btn btn-success">Saiba Mais</button>
+                                <p align="justify"> Estou doando a Cruela porque ela é uma gata muito difícil de se
+                                    conviver com outros gatos em casa...</p><a href="#"><button type="button"
+                                        class="btn btn-success">Saiba Mais</button>
                                 </a>
                             </div>
                         </div>
@@ -134,32 +71,29 @@
 
                     <div class="container" style="margin-top: 10px;">
                         <div class="row">
-                            <div class="col-xs-12 col-11 col-md-4">
-                                <img height="100%" width="100%" src="imagem/índice.jpg" class="imagem2">
-                            </div>
+
+                            <img height="100%" width="100%" src="imagem/índice.jpg" class="imagem2">
                             <div class="col-xs-12 col-12 col-md-6">
-                                <h5>Sem nome - <b>Juliana</b></h5>
+                                <h5>Bibo - <b>Juliana</b></h5>
                                 <p></p>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit enim neque, sint
-                                    voluptas quis natus, odio veritatis cum beatae explicabo, impedit asperiores fugiat
-                                    ut repellendus facere vitae nihil. Similique, quod.</p><a href="#"><button
-                                        type="button" class="btn btn-success">Saiba Mais</button>
+                                <p align="justify">Bibo era o cachorro do meu vizinho que estava sofrendo covardias e
+                                    maus tratos com frequência...</p><a href="#"><button type="button"
+                                        class="btn btn-success">Saiba Mais</button>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="container" style="margin-top: 10px; margin-bottom: 15px;">
                         <div class="row">
-                            <div class="col-xs-12 col-11 col-md-4">
-                                <img height="100%" width="100%" src="imagem/chihuahua3-150px.jpg" class="imagem3">
-                            </div>
+
+                            <img height="100%" width="100%" src="imagem/chihuahua3-150px.jpg" class="imagem3">
+
                             <div class="col-xs-12 col-12 col-md-6">
                                 <h5>Robertinho - <b>Gustavo Lara</b></h5>
                                 <p></p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quibusdam nihil
-                                    numquam totam amet optio asperiores reiciendis? Eligendi non autem magnam dolore
-                                    alias? Tempora quo illo vitae quaerat ex impedit!</p><a href="#"><button
-                                        type="button" class="btn btn-success">Saiba Mais</button>
+                                <p align="justify">Robertinho foi encontrado no lixo quando era filhote a 2 anos atrás ,
+                                    na região do Barreiro...</p><a href="#"><button type="button"
+                                        class="btn btn-success">Saiba Mais</button>
                                 </a>
                             </div>
                         </div>
@@ -167,19 +101,20 @@
 
                 </div>
 
-                <!--Noticia-->
-                <div class="col-4">
-                    <h1>Dicas de Cuidados</h1>
-                    <p>1. Alimentar</p>
-                    <p>2. Fazer a castração</p>
-                    <p>3. Dar banhos e escovar</p>
-                    <p>4. Visitar o veterinário</p>
-                    <p>5. Manter a vacinação em dia</p>
-                    <p>6. Controlar os parasitas</p>
-                    <p>7. Passear e brincar <a href="#"><button type="button" class="btn btn-success">Saiba
-                                Mais</button></a></p>
-
-
+                <!--Dicas-->
+                <div class="dica col-12 col-sm-12 col-md-12 col-lg-2">
+                    <div class="card" style="width: 18rem;">
+                        <h2 class="titulo"><b>Dicas de Cuidado:</b></h2>
+                        <div class="card-body">
+                            <p class="card-text">
+                            <ul> <i class="fa-solid fa-paw"></i> Alimentar;</ul>
+                            <ul> <i class="fa-solid fa-paw"></i> Dar banhos e escovar;</ul>
+                            <ul> <i class="fa-solid fa-paw"></i> Visitar o veterinário regularmente;</ul>
+                            <ul> <i class="fa-solid fa-paw"></i> Manter a vacinação em dia;</ul>
+                            <ul> <i class="fa-solid fa-paw"></i> Passear e cuidar do seu animalzinho.</ul>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -192,10 +127,9 @@
     <footer class="foot">
         <div class="row"></div>
         <div class="col-12 rodape">
-            <div class="text-center p-3" style="background-color: #175d3c ;">
+            <div class="text-center p-3" style="background-color: #175d3c;">
                 <p class="footertext">© Todos os direitos reservados - Bichos SA - 2022 <b>PUC MINAS</b></p>
             </div>
-        </div>
         </div>
     </footer>
 </body>

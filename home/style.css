@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,63 +7,139 @@
     font-family: 'Roboto', sans-serif;
 }
 
-header{
+header {
     background-color: #175d3c;
     margin-bottom: 15px;
     position: relative;
 }
-.headerA{
+
+.headerA {
     padding: 0px 0px;
     width: 100%;
 }
-.menuA{
-margin-top: 50px;
+
+.menuA {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 0 !important;
 }
-.cabe{
-margin: 0%;
+
+.cabe {
+    margin: 0%;
 }
-#headpad{
+
+#headpad {
     padding: 15px;
     margin: 5px;
 }
-#cadastro{
+
+#cadastro {
     padding: 20px;
     margin: 5px;
 }
 
-
-
-.menuA nav a{
+.menuA nav a {
     color: #ffff;
-    background-color: #4b876b  !important;
+    background-color: #4b876b !important;
 
 }
-.menuA nav a:hover{
+
+.menuA nav a:hover {
     background-color: #A9E19A !important;
-}    
-
-.logo{
-width: 150px;
-
 }
-.imagem1,.imagem2,.imagem3{
+
+.logo {
+    width: 200px;
+    height: 200px;
+}
+
+.imagem1,
+.imagem2,
+.imagem3 {
     width: 150px;
 }
 
-h2{
+h2 {
     margin-bottom: 20px;
     padding-right: 30px;
 }
 
+.dicas {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.dica .card {
+    background-color: #b8e9ab;
+    margin-bottom: 20px;
+}
+
+.titulo {
+    margin-top: 20px;
+    text-align: center;
+}
+
 
 .foot {
-   position: flex;
-    bottom:0;
-    width:100%;
-    height:12px;  
-    background-color:#175d3c;
+    position: flex;
+    bottom: 0;
+    width: 100%;
+    height: 12px;
+    background-color: #175d3c;
     color: white;
     text-align: center;
     padding: 0%;
- }
+}
 
+
+.avatar {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: #4b876b ;
+}
+
+.avatar> img {
+    width: 30px;
+    height: 30px;
+}
+
+.access_profile {
+    text-align: center;
+}
+
+.access_profile > span {
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: inline;
+}
+
+.menu {
+    margin: 10px auto;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.menu>li {
+    display: inline;
+    color: #fff;
+    /* margin: 10px auto 10px auto; */
+    /* padding: 2px; */
+    /* position: relative; */
+    cursor: pointer;
+}
+
+.menu>li:hover {
+    color: #4b876b;
+    transition: 0.5ms;
+    font-weight: bold;
+}
