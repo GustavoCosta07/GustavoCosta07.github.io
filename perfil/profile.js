@@ -1,6 +1,6 @@
 const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
 if (!usuarioLogado) {
-    window.location.assign('index.html')
+    window.location.assign('../login/index.html')
 }
 
 window.onload = function () {
@@ -59,6 +59,8 @@ function editar() {
     localStorage.setItem('listaUser', JSON.stringify(listaUser))
     alert("Usuário alterado com sucesso!")
     return false
+    
+    
 
 }
 
@@ -82,5 +84,5 @@ function excluir() {
     }
 
     localStorage.removeItem('usuarioLogado');
-    window.location.assign('index.html')
+    window.location.assign('../login/index.html')
 }
