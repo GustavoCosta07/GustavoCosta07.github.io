@@ -10,5 +10,5 @@ window.onload = () => {
 
 function sair () {
     localStorage.removeItem('usuarioLogado');
-    window.location.assign('../index.html')
+    window.location.assign('/login/index.html')
 }
