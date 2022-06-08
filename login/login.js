@@ -15,7 +15,7 @@ function entrar() {
 
     localStorage.setItem('usuarioLogado', JSON.stringify(usuarioLogado[0]));
    
-    window.location.assign('home/home.html')
+    window.location.assign('/home/home.html')
 
     return false
 }
