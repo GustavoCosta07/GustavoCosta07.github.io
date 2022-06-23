@@ -4,10 +4,11 @@ function cadastrar() {
     const email = document.getElementById('email').value
     const senha = document.getElementById('senha').value
     const confirmacao = document.getElementById('confirmacao').value
+    const telefone = document.getElementById('telefone').value
 
 
 
-    if (!usuario || !nome || !email || !senha || !confirmacao) {
+    if (!usuario || !nome || !email || !senha || !confirmacao || !telefone) {
         alert("Insira os valores nos campos corretamente!")
         return false;
     }
@@ -30,6 +31,7 @@ function cadastrar() {
                 emailCad: email,
                 senhaCad: senha,
                 usuarioCad: usuario,
+                telefoneCad: telefone,
             }
         )
 
