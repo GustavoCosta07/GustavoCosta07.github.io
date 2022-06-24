@@ -1,3 +1,8 @@
+const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
+if (!usuarioLogado) {
+    window.location.assign('../index.html')
+}
+
 const urlSearchParams = new URLSearchParams(window.location.search);
 const params = Object.fromEntries(urlSearchParams.entries());
 const { id } = params

@@ -1,6 +1,6 @@
 const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
 if (!usuarioLogado) {
-    window.location.assign('../login/index.html')
+    window.location.assign('../index.html')
 }
 
 window.onload = function () {
