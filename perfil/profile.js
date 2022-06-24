@@ -84,5 +84,5 @@ function excluir() {
     }
 
     localStorage.removeItem('usuarioLogado');
-    window.location.assign('../login/index.html')
+    window.location.assign('../index.html')
 }

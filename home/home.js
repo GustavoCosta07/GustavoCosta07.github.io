@@ -32,5 +32,5 @@ const gerarHtml = () => {
 
 function sair() {
     localStorage.removeItem('usuarioLogado');
-    window.location.assign('/login/index.html')
+    window.location.assign('../index.html')
 }
