@@ -33,7 +33,7 @@ dono = dono[0]
 
 window.onload = function () {
     document.getElementById('nomePet').innerHTML = pet.nomeAnimalCad
-    document.getElementById('imagemPet').src = '../imagens/pets/' + pet.id + '.jpg'
+    document.getElementById('imagemPet').src = pet.fotoPet || '../imagens/pets/' + pet.id + '.jpg'
     document.getElementById('idadePet').innerHTML = pet.idadeCad + ' ano(s)'
     document.getElementById('nomeDono').innerHTML = dono.nomeCad
     document.getElementById('descricao').innerHTML = pet.descricaoCad //Este vai sair para chamar descrição completa

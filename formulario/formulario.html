@@ -18,17 +18,6 @@
         </div>
         <form action="#" class="the-form" onsubmit="return cadastrarAnimal()">
             <div class="cp">
-                <label for="Nome">Nome:</label>
-                <input type="text" name="Nome" id="Nome" class="padrao" required placeholder="Nome Sobrenome">
-            </div>
-
-
-            <div class="cp">
-                <label for="Telefone">Telefone:</label>
-                <input type="telefone" name="telefone" id="telefone" class="padrao" required placeholder="XX XXXXX-XXXX">
-            </div>
-
-            <div class="cp">
                 <label>Coloque a especie do animal:</label>
                 <select id="animal">
                     <option selected disabled value="">Escolha</option>
@@ -42,7 +31,7 @@
                 <div class="container">
                 <div class="wrapper">
                     <div class="imagem">
-                        <img src="">
+                        <img id="foto" src="">
                     </div>
                     <div class="content">
                         <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
@@ -51,7 +40,7 @@
                     <div id="cancel-btn"><i class="fas fa-times"></i></div>
                     <div class="file-name"></div>
                 </div>
-                <input type="file" id="file">
+                <input type="file" id="file" accept="image/jpeg, image/png, image/jpg">
                 </div>
                 <br>
             </fieldset>

@@ -1,7 +1,19 @@
 const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
+let fotoPet = null
 
 if (!usuarioLogado) {
     window.location.assign('../index.html')
+}
+
+window.onload = () => {
+document.querySelector('#file').addEventListener("change", function () {
+    const reader = new FileReader();
+    reader.addEventListener("load", () => {
+        fotoPet = reader.result
+        document.getElementById('foto').src = fotoPet
+    })
+    reader.readAsDataURL(this.files[0])
+})
 }
 
 function cadastrarAnimal() {
@@ -13,7 +25,7 @@ function cadastrarAnimal() {
     // const localizacaoAnimal = document.getElementById('localizacao').value
     
     
-    if (!especie || !nomeAnimal || !idadeAnimal || !descricaoAnimal){//|| !descricaoCompletaAnimal || !localizacaoAnimal) {
+    if (!especie || !nomeAnimal || !idadeAnimal || !descricaoAnimal || !fotoPet){//|| !descricaoCompletaAnimal || !localizacaoAnimal) {
         alert("Insira os valores nos campos corretamente!")
         return false;
     }
@@ -30,6 +42,7 @@ function cadastrarAnimal() {
             idadeCad: idadeAnimal,
             descricaoCad: descricaoAnimal,
             idDono: usuarioLogado.id,
+            fotoPet
             // descricaoCompletaAnimalCad: descricaoCompletaAnimal,
             // localizacaoAnimalCad: localizacaoAnimal,
 

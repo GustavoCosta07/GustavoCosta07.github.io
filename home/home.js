@@ -13,9 +13,10 @@ const gerarHtml = () => {
     const listaPets = document.getElementById('listaPets')
 
     for (const animal of animais.reverse()) {
+        const fotoPet = animal.fotoPet || `../imagens/pets/${animal.id}.jpg`
         const template = `<div class="container" style="margin-bottom: 10px;">
             <div class="row">
-                <img height="100%" width="100%" src="../imagens/pets/${animal.id}.jpg" class="imagem1">
+                <img height="100%" width="100%" src="${fotoPet}" class="imagem1">
                 <div class="col-xs-12 col-12 col-md-6">
                     <h5> ${animal.nomeAnimalCad}</h5>
                     <p></p>
