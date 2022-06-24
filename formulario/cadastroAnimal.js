@@ -11,8 +11,8 @@ function cadastrarAnimal() {
     const descricaoAnimal = document.getElementById('Resumo').value
     // const descricaoCompletaAnimal = document.getElementById('descricaoCompleta').value
     // const localizacaoAnimal = document.getElementById('localizacao').value
-
-
+    
+    
     if (!especie || !nomeAnimal || !idadeAnimal || !descricaoAnimal){//|| !descricaoCompletaAnimal || !localizacaoAnimal) {
         alert("Insira os valores nos campos corretamente!")
         return false;
@@ -29,7 +29,7 @@ function cadastrarAnimal() {
             especieCad: especie,
             idadeCad: idadeAnimal,
             descricaoCad: descricaoAnimal,
-            idDono: usuarioLogado.id
+            idDono: usuarioLogado.id,
             // descricaoCompletaAnimalCad: descricaoCompletaAnimal,
             // localizacaoAnimalCad: localizacaoAnimal,
 
@@ -41,27 +41,4 @@ function cadastrarAnimal() {
     return false
 }
 
-// const upload = () => {
-//     var imgFile = document.getElementById('file');
-//     if (imgFile.files && imgFile.files[0]) {
-//         var width;
-//         var height;
-//         var fileSize;
-//         var reader = new FileReader();
-//         reader.onload = function (event) {
-//             var dataUri = event.target.result,
-//                 // img = document.createElement("img");
-//                 // img.src = dataUri;
-//                 // width = img.width;
-//                 // height = img.height;
-//                 fileSize = imgFile.files[0].size;
-//             alert(width);
-//             alert(height);
-//             alert(fileSize);
-//         };
-//         reader.onerror = function (event) {
-//             console.error("File could not be read! Code " + event.target.error.code);
-//         };
-//         reader.readAsDataURL(imgFile.files[0]);
-//     }
-// }
+
