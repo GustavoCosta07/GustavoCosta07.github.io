@@ -1,5 +1,8 @@
+
+
+
 function cadastrar() {
-    const usuario = document.getElementById('usuario').value 
+    const usuario = document.getElementById('usuario').value
     const nome = document.getElementById('nome').value
     const email = document.getElementById('email').value
     const senha = document.getElementById('senha').value
@@ -11,6 +14,34 @@ function cadastrar() {
     if (!usuario || !nome || !email || !senha || !confirmacao || !telefone) {
         alert("Insira os valores nos campos corretamente!")
         return false;
+    }
+
+    if (nome.length < 6) {
+        alert("Insira seu nome completo!")
+        return false;
+    }
+
+    if (usuario.length < 3) {
+        alert("Seu usuário deve ter no mínimo 3 caracteres!")
+        return false;
+    }
+
+    if (telefone.length < 9) {
+        alert("Insira um número de telefone válido!")
+        return false;
+    }
+
+    if (senha.length < 6) {
+        alert("Insira uma senha com no mínimo 6 caracteres!")
+        return false;
+    }
+    const usuarios = JSON.parse(localStorage.getItem('listaUser') || '[]');
+
+    for (const usuario of usuarios) {
+        if (usuario.emailCad === email) {
+            alert("Este email já está cadastrado na plataforma, insira um email diferente!")
+            return false;
+        }
     }
 
     if (senha != confirmacao) {

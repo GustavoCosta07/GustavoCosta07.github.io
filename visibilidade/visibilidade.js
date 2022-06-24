@@ -43,3 +43,24 @@ window.onload = function () {
     // document.getElementById('localizacao').innerHTML = pet.localizacaoAnimalCad
 
 }
+
+
+
+// function excluirAnimal() {
+//     const idDonoAnimal = JSON.parse(localStorage.getItem('listaAnimal') || '[]');
+
+//     for (const id of idDonoAnimal) {
+//         if (id.idDono === usuarioLogado.id) {
+           
+
+//             if ( idDonoAnimal.length === 0) {
+//                 localStorage.removeItem('listaAnimal')
+//             } else {
+//                 localStorage.setItem('listaAnimal', JSON.stringify(idDonoAnimal));
+//             }
+        
+//             localStorage.removeItem('listaAnimal');
+//             window.location.assign('../home/home.html')
+//         }
+//     }
+// }
