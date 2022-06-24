@@ -9,6 +9,8 @@ function cadastrarAnimal() {
     const nomeAnimal = document.getElementById('NomeAnimal').value
     const idadeAnimal = document.getElementById('Idade').value
     const descricaoAnimal = document.getElementById('Resumo').value
+    const descricaoCompletaAnimal = document.getElementById('descricaoCompleta').value
+
 
     if (!especie || !nomeAnimal || !idadeAnimal || !descricaoAnimal) {
         alert("Insira os valores nos campos corretamente!")

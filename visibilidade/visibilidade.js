@@ -34,4 +34,7 @@ window.onload = function () {
     document.getElementById('descricao').innerHTML = pet.descricaoCad
     document.getElementById('email').innerHTML = dono.emailCad
     document.getElementById('telefone').innerHTML = dono.telefoneCad
+    // document.getElementById('descricaoCompleta').innerHTML = pet.descricaoCompletaAnimalCad
+    // document.getElementById('localizacao').innerHTML = pet.localizacaoAnimalCad
+
 }
