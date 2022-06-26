@@ -21,11 +21,11 @@ function cadastrarAnimal() {
     const nomeAnimal = document.getElementById('NomeAnimal').value
     const idadeAnimal = document.getElementById('Idade').value
     const descricaoAnimal = document.getElementById('Resumo').value
-    // const descricaoCompletaAnimal = document.getElementById('descricaoCompleta').value
-    // const localizacaoAnimal = document.getElementById('localizacao').value
+    const descricaoCompletaAnimal = document.getElementById('descricaoCompleta').value
+    const localizacaoAnimal = document.getElementById('localizacao').value
     
     
-    if (!especie || !nomeAnimal || !idadeAnimal || !descricaoAnimal || !fotoPet){//|| !descricaoCompletaAnimal || !localizacaoAnimal) {
+    if (!especie || !nomeAnimal || !idadeAnimal || !descricaoAnimal || !fotoPet || !descricaoCompletaAnimal || !localizacaoAnimal) {
         alert("Insira os valores nos campos corretamente!")
         return false;
     }
@@ -42,9 +42,9 @@ function cadastrarAnimal() {
             idadeCad: idadeAnimal,
             descricaoCad: descricaoAnimal,
             idDono: usuarioLogado.id,
-            fotoPet
-            // descricaoCompletaAnimalCad: descricaoCompletaAnimal,
-            // localizacaoAnimalCad: localizacaoAnimal,
+            fotoPet,
+            descricaoCompletaAnimalCad: descricaoCompletaAnimal,
+            localizacaoAnimalCad: localizacaoAnimal,
 
         }
     )
