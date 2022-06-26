@@ -36,27 +36,30 @@ window.onload = function () {
     document.getElementById('imagemPet').src = pet.fotoPet || '../imagens/pets/' + pet.id + '.jpg'
     document.getElementById('idadePet').innerHTML = pet.idadeCad + ' ano(s)'
     document.getElementById('nomeDono').innerHTML = dono.nomeCad
-    document.getElementById('descricao').innerHTML = pet.descricaoCad //Este vai sair para chamar descrição completa
+    document.getElementById('descricaoCompleta').innerHTML = pet.descricaoCompletaAnimalCad
     document.getElementById('email').innerHTML = dono.emailCad
     document.getElementById('telefone').innerHTML = dono.telefoneCad
-    // document.getElementById('descricaoCompleta').innerHTML = pet.descricaoCompletaAnimalCad
-    // document.getElementById('localizacao').innerHTML = pet.localizacaoAnimalCad
+    document.getElementById('localizacao').innerHTML = pet.localizacaoAnimalCad
 
 }
 
 
 
 // function excluirAnimal() {
-//     const idDonoAnimal = JSON.parse(localStorage.getItem('listaAnimal') || '[]');
 
-//     for (const id of idDonoAnimal) {
-//         if (id.idDono === usuarioLogado.id) {
-           
+//     for (const animal of animais) {
+//         if (animal.idDono === usuarioLogado.id) {
 
-//             if ( idDonoAnimal.length === 0) {
+//             let pet = animais.filter(function (animal) {
+//                 return animal.id == id
+//             })
+            
+//             pet = pet[0]
+
+//             if ( animal.id === pet.id) {
 //                 localStorage.removeItem('listaAnimal')
 //             } else {
-//                 localStorage.setItem('listaAnimal', JSON.stringify(idDonoAnimal));
+//                 localStorage.setItem('listaAnimal', JSON.stringify(animal));
 //             }
         
 //             localStorage.removeItem('listaAnimal');

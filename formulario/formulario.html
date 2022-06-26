@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="Formulario.css" media="screen">
-    <script src="cadastroAnimal.js"></script>
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
 
     <title>Formulário</title>
 </head>
@@ -16,7 +15,7 @@
             <p  id="Sub-Título">Complete seu cadastro:</p>
             <br> 
         </div>
-        <form action="#" class="the-form" onsubmit="return cadastrarAnimal()">
+        <form>
             <div class="cp">
                 <label>Coloque a especie do animal:</label>
                 <select id="animal">
@@ -31,7 +30,7 @@
                 <div class="container">
                 <div class="wrapper">
                     <div class="imagem">
-                        <img id="foto" src="">
+                        <img src="">
                     </div>
                     <div class="content">
                         <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
@@ -40,7 +39,7 @@
                     <div id="cancel-btn"><i class="fas fa-times"></i></div>
                     <div class="file-name"></div>
                 </div>
-                <input type="file" id="file" accept="image/jpeg, image/png, image/jpg">
+                <input type="file" id="file">
                 </div>
                 <br>
             </fieldset>
@@ -49,18 +48,21 @@
                 <br>
                 <label>Nome do animal:</label>
                 <input type="text" name="NomeAnimal" id="NomeAnimal" class="padrao" required placeholder="XXXXXXXXX">
+                <label>Cidade e estado:</label>
+                <input type="text" name="NomeAnimal" id="localizacao" class="padrao" required>
                 <label>Idade do animal:</label>
                 <input type="text" name="Idade" id="Idade" class="padrao" required placeholder="XX Anos">
                 <br>
-                <label>Fale um pouco sobre seu animal:</label>
+                <label>Uma pequena descrição do animal</label>
                 <textarea row="6" style="width: 23em" id="Resumo"  class="padrao"></textarea>
+                <br>
+                <label>Fale um pouco mais sobre seu animal:</label>
+                <textarea row="6" style="width: 23em" id="descricaoCompleta"  class="padrao"></textarea>
             </div>
             <button class="Botão" type="submit">Enviar</button>
         </form>
     </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"></script>
+
 </body>
 <footer class="rodape">
     <div class="row">
