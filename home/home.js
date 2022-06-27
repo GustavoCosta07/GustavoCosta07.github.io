@@ -31,7 +31,4 @@ const gerarHtml = () => {
 }
 
 
-function sair() {
-    localStorage.removeItem('usuarioLogado');
-    window.location.assign('../index.html')
-}
+
