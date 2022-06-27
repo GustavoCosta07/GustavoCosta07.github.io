@@ -30,7 +30,6 @@ let dono = donos.filter(function (dono) {
 })
 dono = dono[0]
 
-
 window.onload = function () {
     document.getElementById('nomePet').innerHTML = pet.nomeAnimalCad
     document.getElementById('imagemPet').src = pet.fotoPet || '../imagens/pets/' + pet.id + '.jpg'
@@ -45,25 +44,27 @@ window.onload = function () {
 
 
 
-// function excluirAnimal() {
+function excluirAnimal() {
 
-//     for (const animal of animais) {
-//         if (animal.idDono === usuarioLogado.id) {
+    if (pet.idDono !== usuarioLogado.id) {
+        alert('Você nao pode excluir uma doação que nao é responsavel!')
+        return;
+    }
 
-//             let pet = animais.filter(function (animal) {
-//                 return animal.id == id
-//             })
-            
-//             pet = pet[0]
+    const idPet = pet.id
 
-//             if ( animal.id === pet.id) {
-//                 localStorage.removeItem('listaAnimal')
-//             } else {
-//                 localStorage.setItem('listaAnimal', JSON.stringify(animal));
-//             }
-        
-//             localStorage.removeItem('listaAnimal');
-//             window.location.assign('../home/home.html')
-//         }
-//     }
-// }
+    for (let contador = 0; contador < animais.length; contador++) {
+        if(animais[contador].id === idPet) {
+            animais.splice(contador, 1)
+            break;
+        }
+    }
+
+    if (animais.length === 0) {
+        localStorage.removeItem('listaAnimal')
+    } else {
+        localStorage.setItem('listaAnimal', JSON.stringify(animais));
+    }
+
+    window.location.assign('../home/home.html')
+}

@@ -1,3 +1,8 @@
+const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
+if (usuarioLogado) {
+    window.location.assign('../home/home.html')
+}
+
 const marretarUsuarios = () => {
     const listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
 
@@ -28,7 +33,8 @@ const marretarUsuarios = () => {
                 especieCad: 'Cachorro',
                 idadeCad: 8,
                 descricaoCad: 'Bilú é muito dócil e amoroso, gosta de brincar e fazer estripulias... Yuuppiiii',
-                idDono: 1
+                idDono: 1,
+                localizacaoAnimalCad: 'São Gabriel - Belo Horizonte'
             },
             {
                 id: 2,
@@ -36,7 +42,8 @@ const marretarUsuarios = () => {
                 especieCad: 'Gato',
                 idadeCad: 2,
                 descricaoCad: 'Alonzo gosta de ser tratado com respeito, prefere não dar muita bola para estranhos e dorme muito.',
-                idDono: 1
+                idDono: 1,
+                localizacaoAnimalCad: 'Santa Inês - Belo Horizonte'
             },
             {
                 id: 3,
@@ -44,13 +51,13 @@ const marretarUsuarios = () => {
                 especieCad: 'Cachorro',
                 idadeCad: 1,
                 descricaoCad: 'Toby é fanático pelo universo Marvel, está precisando de um Sr. Tony Stark em sua vida!',
-                idDono: 2
+                idDono: 2,
+                localizacaoAnimalCad: 'Palmares - Belo Horizonte'
             }
         ]
 
         localStorage.setItem('listaUser', JSON.stringify(usuarios));
         localStorage.setItem('listaAnimal', JSON.stringify(pets));
-        console.log('usuários marretados com sucesso!')
     }
 }
 

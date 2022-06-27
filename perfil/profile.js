@@ -65,6 +65,7 @@ function editar() {
 }
 
 function excluir() {
+
     
     const listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
 
@@ -83,6 +84,11 @@ function excluir() {
         localStorage.setItem('listaUser', JSON.stringify(listaUser));
     }
 
+    localStorage.removeItem('usuarioLogado');
+    window.location.assign('../index.html')
+}
+
+function sair() {
     localStorage.removeItem('usuarioLogado');
     window.location.assign('../index.html')
 }

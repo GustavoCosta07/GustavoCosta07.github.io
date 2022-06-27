@@ -1,6 +1,3 @@
-
-
-
 function cadastrar() {
     const usuario = document.getElementById('usuario').value
     const nome = document.getElementById('nome').value
@@ -8,8 +5,6 @@ function cadastrar() {
     const senha = document.getElementById('senha').value
     const confirmacao = document.getElementById('confirmacao').value
     const telefone = document.getElementById('telefone').value
-
-
 
     if (!usuario || !nome || !email || !senha || !confirmacao || !telefone) {
         alert("Insira os valores nos campos corretamente!")
